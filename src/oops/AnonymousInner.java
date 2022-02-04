@@ -8,13 +8,13 @@ public class AnonymousInner {
 
     public static void main(String[] args) {
 
-     MyInter obj = new MyInter() {
-         @Override
-         void show() {
+        MyInter obj = new MyInter() {
+            @Override
+            void show() {
 
-         }
-     };
-     obj.show();
+            }
+        };
+        obj.show();
     }
 
 }
