@@ -21,7 +21,7 @@ public class CustomException {
 
     }
     public static void main(String[] args) {
-        
+
         try {
             mark(41);
         } catch (MyException e) {
