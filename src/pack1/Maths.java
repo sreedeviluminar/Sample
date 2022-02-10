@@ -43,6 +43,7 @@ class  main{
         Thread3 t3 = new Thread3();
 
         t1.start();
+        t1.setPriority(Thread.MAX_PRIORITY);
         t2.start();
         t3.start();
     }
