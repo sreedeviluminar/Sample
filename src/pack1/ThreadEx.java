@@ -1,17 +1,27 @@
 package pack1;
 
-public class ThreadEx implements Runnable {
+class Mathss{
 
-    @Override
-    public void run() {
-        System.out.println("Currently working thread "+Thread.currentThread().getName());
+    void print(int num ) {
+
+        for(int i = 1; i<= 10;i++) {
+
+            System.out.println(num+" * "+i + " = "+(num*i));
+
+            try {
+
+                Thread.sleep(1000);
+
+            }catch(InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
+}
 
+public class ThreadEx {
     public static void main(String[] args) {
 
-        ThreadEx obj = new ThreadEx();
-        Thread t = new Thread(obj);
-        t.start();
     }
 
 }

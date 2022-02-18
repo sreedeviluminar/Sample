@@ -4,6 +4,8 @@ package oops;
 
     abstract  void show();
 }
+
+
 public class AnonymousInner {
 
     public static void main(String[] args) {
